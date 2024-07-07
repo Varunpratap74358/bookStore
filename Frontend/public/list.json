@@ -1,0 +1,82 @@
+[
+    {
+        "id":1,
+        "name":"Sed Story",
+        "title":"Lorem ipsum dolor sit, amet consectetur adipisic.",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1719731576~exp=1719735176~hmac=19f67811ea43fa043c189db55ba277351cbb2893a1fa0ba42d8376f96402e162&w=740"
+    },
+    {
+        "id":2,
+        "name":"GaneshChaturthi",
+        "title":"Lorem ipsum dolor sit, amet consectetur adipisic.",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-ganesh-chaturthi-poster_52683-40877.jpg?ga=GA1.1.978966499.1719726771&semt=ais_user"
+    },
+    {
+        "id":3,
+        "name":"Ramnavmi Book",
+        "title":"Lorem ipsum dolor sit, amet consectetur adipisic.",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1719731576~exp=1719735176~hmac=19f67811ea43fa043c189db55ba277351cbb2893a1fa0ba42d8376f96402e162&w=740"
+    },
+    {
+        "id":4,
+        "name":"Hard Cover",
+        "title":"Lorem ipsum dolor sit, amet consectetur adipisic.",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-psd/hardcover-books-mockup-front-view_1332-60612.jpg?t=st=1719731930~exp=1719735530~hmac=2152927577a002f8f22a2778360e4526870746aa03a56614c2f7110e01bf8a80&w=1060"
+    },
+    {
+        "id":5,
+        "name":"Story Book",
+        "title":"Lorem ipsum dolor sit, amet consectetur adipisic.",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/premium-photo/tied-with-satin-ribbons-love-letters-rest-wellworn-vintage-books_1080455-1644.jpg?w=1060"
+    },
+    {
+        "id":6,
+        "name":"Story Book",
+        "title":"Lorem ipsum dolor sit, amet consectetur adipisic.",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1719731576~exp=1719735176~hmac=19f67811ea43fa043c189db55ba277351cbb2893a1fa0ba42d8376f96402e162&w=740"
+    },
+    {
+        "id":7,
+        "name":"Kahli Book",
+        "title":"Lorem ipsum dolor sit, amet consectetur adipisic.",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/premium-vector/cartoon-blue-book-hardcover-bestseller_53500-1529.jpg?w=740"
+    },
+    {
+        "id":8,
+        "name":"Vead",
+        "title":"Lorem ipsum dolor sit, amet consectetur adipisic.",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/premium-photo/single-open-book-isolated-against-pure-white_1137529-31569.jpg?ga=GA1.1.978966499.1719726771&semt=sph"
+    },
+    {
+        "id":9,
+        "name":"Entertainment",
+        "title":"Lorem ipsum dolor sit, amet consectetur adipisic.",
+        "price":80,
+        "category":"Pad",
+        "image":"https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1719731576~exp=1719735176~hmac=19f67811ea43fa043c189db55ba277351cbb2893a1fa0ba42d8376f96402e162&w=740"
+    },
+    {
+        "id":10,
+        "name":"Comedy Book",
+        "title":"Lorem ipsum dolor sit, amet consectetur adipisic.",
+        "price":50,
+        "category":"Pad",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1719731456~exp=1719735056~hmac=ff9bd5e3fbbabd39aebad6f43c5eb629a56c1cfc085281d169063e72eb83b808&w=740"
+    }
+]
