@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Login from './Login'
+import Logout from './Logout'
+import { useAuth } from '../contextcourse/Authprovider'
 
 const Navbar = () => {
+  const [authUser, setAuthUser] = useAuth()
+
   // const [them,setThem] = useState(localStorage.getItem('theme')?localStorage.getItem('theme'):'light')
   // const element = document.documentElement;
   // useEffect(()=>{
@@ -17,43 +21,49 @@ const Navbar = () => {
   //   }
   // },[])
 
-  const [stcky,setStcky] = useState(false)
+  const [stcky, setStcky] = useState(false)
 
-  useEffect(()=>{
-    const handelScrool = ()=>{
-      if(window.scrollY > 0){
+  useEffect(() => {
+    const handelScrool = () => {
+      if (window.scrollY > 0) {
         setStcky(true)
       } else {
         setStcky(false)
       }
     }
-    window.addEventListener('scroll',handelScrool);
-    return () =>{
-      window.removeEventListener('scroll',handelScrool)
+    window.addEventListener('scroll', handelScrool)
+    return () => {
+      window.removeEventListener('scroll', handelScrool)
     }
-  },[])
+  }, [])
   const navItems = (
     <>
       <li>
         {/* <a href='/'>Home</a> */}
-        <Link to='/'>Home</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
         {/* <a href='/course'>Course</a> */}
-        <Link to='/course'>Course</Link>
+        <Link to="/course">Course</Link>
       </li>
       <li>
         {/* <a>Contect</a> */}
-        <Link to='/contact'>Contect</Link>
+        <Link to="/contact">Contect</Link>
       </li>
       <li>
         {/* <a>About</a> */}
-        <Link to='/'>About</Link>
+        <Link to="/">About</Link>
       </li>
     </>
   )
   return (
-    <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-900 dark:text-white fixed top-0 left-0 right-0 z-50 ${stcky? "sticky-navbar shadow-md bg-base-200 dark:bg-slate-600 dark:text-white duration-300 transition-all ease-in-out":""}`}>
+    <div
+      className={`max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-900 dark:text-white fixed top-0 left-0 right-0 z-50 ${
+        stcky
+          ? 'sticky-navbar shadow-md bg-base-200 dark:bg-slate-600 dark:text-white duration-300 transition-all ease-in-out'
+          : ''
+      }`}
+    >
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -90,7 +100,11 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <label className="px-3 py-2 border-[2px] rounded-md flex items-center gap-2">
-              <input type="text" className="grow outline-none bg-transparent" placeholder="Search" />
+              <input
+                type="text"
+                className="grow outline-none bg-transparent"
+                placeholder="Search"
+              />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -133,12 +147,29 @@ const Navbar = () => {
               <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,8.14,8.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A8.15,8.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
             </svg>
           </label>
-          <div className="">
+
+          {authUser ? (
+            <Logout />
+          ) : (
+            <div className="">
+              <a
+                className="bg-black text-white md:px-4 md:py-3 rounded-md px-3 py-2 hover:bg-slate-700 duration-300 cursor-pointer"
+                onClick={() =>
+                  document.getElementById('my_modal_3').showModal()
+                }
+              >
+                Login
+              </a>
+              <Login />
+            </div>
+          )}
+
+          {/* <div className="">
             <a className="bg-black text-white md:px-4 md:py-3 rounded-md px-3 py-2 hover:bg-slate-700 duration-300 cursor-pointer" onClick={() => document.getElementById('my_modal_3').showModal()}>
               Login
             </a>
             <Login />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
